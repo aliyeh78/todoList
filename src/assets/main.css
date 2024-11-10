@@ -1,0 +1,23 @@
+@import './base.css';
+@import './tailwindcss.css';
+
+#app {
+  width: 100%; /* Ensure it takes up full viewport width */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Adjust side padding as needed */
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  #app {
+    padding: 0 2rem; /* Apply larger padding for wider screens */
+  }
+}
+
+/* To control grid layout separately if needed */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* Optional gap for spacing */
+}
